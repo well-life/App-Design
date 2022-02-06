@@ -13,7 +13,7 @@ class DesignApp extends StatefulWidget {
 class _DesignAppState extends State<DesignApp> {
   @override
   Widget build(BuildContext context) {
-    int _currentIndex = 0;
+    int _currentIndex = 1;
 
     void onTabTapped(int index) {
     setState(() {
@@ -39,7 +39,6 @@ class _DesignAppState extends State<DesignApp> {
           padding: EdgeInsets. fromLTRB(10.0, 25.0, 10.0, 5.0),
           
           child: GridView.builder(
-              clipBehavior: ,
               shrinkWrap: true,
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
